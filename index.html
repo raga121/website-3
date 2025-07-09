@@ -85,28 +85,27 @@
         }
 
         .hero-slider {
-            position: absolute;
-            top: 0;
-            left: 0;
+            position: relative;
             width: 100%;
-            height: 100%;
-            z-index: 1;
+            height: 100vh; /* full screen height */
+            overflow: hidden;
         }
 
         .hero-slide {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 0; left: 0;
             width: 100%;
             height: 100%;
-            background-size: cover;
-            background-position: center;
+            background-size: cover;        /* makes sure the image covers entire div */
+            background-position: center;   /* centers the image */
+            background-repeat: no-repeat;
             opacity: 0;
             transition: opacity 1s ease-in-out;
         }
 
         .hero-slide.active {
             opacity: 1;
+            z-index: 1;
         }
 
         .hero-slide::before {
@@ -322,8 +321,7 @@
     </header>
 
     <section id="home" class="hero">
-         <div class="hero-slide active" style="background-image: url('images/mandir1.jpg');"></div>
-         <div class="hero-slide" style="background-image: url('images/image1.jpeg');"></div>
+         <div class="hero-slide active" style="background-image: url('images/image1.jpeg');"></div>
          <div class="hero-slide" style="background-image: url('images/image2.jpeg');"></div>
          <div class="hero-slide" style="background-image: url('images/image3.jpeg');"></div>
          <div class="hero-slide" style="background-image: url('images/image4.jpeg');"></div>
