@@ -455,6 +455,40 @@
                 padding: 1rem;
             }
         }
+
+        .dohas-left, .dohas-right {
+          position: fixed;
+          top: 100px;
+          bottom: 100px;
+          width: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1rem;
+          font-size: 0.9rem;
+          font-style: italic;
+          color: #5d4037;
+          background: rgba(255, 248, 220, 0.8);
+          padding: 10px;
+          z-index: 10;
+          border-radius: 10px;
+          writing-mode: vertical-rl;
+          text-orientation: mixed;
+        }
+        
+        .dohas-left {
+          left: 10px;
+        }
+        
+        .dohas-right {
+          right: 10px;
+        }
+        
+        @media (max-width: 768px) {
+          .dohas-left, .dohas-right {
+            display: none; /* Hide on small screens */
+          }
+        }
     </style>
 </head>
 <body>
@@ -905,4 +939,14 @@
         });
     </script>
 </body>
+<div class="dohas-left">
+    <div class="doha-text">"सतगुरु की महिमा अपरम्पार"</div>
+    <div class="doha-text">"राम नाम की महिमा बखानूँ"</div>
+</div>
+
+<div class="dohas-right">
+    <div class="doha-text">"जपो राम नाम सदा सुखदाई"</div>
+    <div class="doha-text">"भक्ति से भवसागर तर जाई"</div>
+</div>
+    
 </html>
