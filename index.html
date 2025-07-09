@@ -332,12 +332,14 @@
         }
         
         .month-block {
-          background: #fff5e1;
-          padding: 0.8rem 1rem;
+          background: #fffdf6;
+          padding: 0.75rem 1rem;
           border-radius: 10px;
-          box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+          box-shadow: 0 1px 5px rgba(0,0,0,0.05);
           font-size: 0.95rem;
           line-height: 1.4;
+          max-height: 220px;        /* prevent super tall blocks */
+          overflow-y: auto;         /* scroll if needed */
         }
         
         .month-block h4 {
@@ -352,6 +354,14 @@
           padding-left: 1.2rem;
           margin: 0;
           list-style-type: disc;
+        }
+
+        .month-block::-webkit-scrollbar {
+          width: 6px;
+        }
+        .month-block::-webkit-scrollbar-thumb {
+          background: #ccc;
+          border-radius: 4px;
         }
 
         .charity-grid {
