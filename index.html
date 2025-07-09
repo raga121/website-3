@@ -167,6 +167,46 @@
             padding-bottom: 0.5rem;
         }
 
+        .saints-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 2rem;
+          margin-top: 2rem;
+        }
+        
+        .saint-card {
+          background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+          padding: 1.5rem;
+          border-radius: 12px;
+          text-align: center;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+          transition: transform 0.3s ease;
+        }
+        
+        .saint-card:hover {
+          transform: translateY(-5px);
+        }
+        
+        .saint-card img {
+          width: 100%;
+          max-height: 250px;
+          object-fit: cover;
+          border-radius: 10px;
+          margin-bottom: 1rem;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .saint-card h3 {
+          color: #d35400;
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+        
+        .saint-card p {
+          font-size: 1rem;
+          line-height: 1.5;
+        }
+
         /* Photo Gallery */
         .photo-gallery {
             display: grid;
@@ -307,11 +347,11 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">श्री राधा कृष्ण मंदिर</div>
+                <div class="logo">निजधाम आश्रम</div>
                 <nav>
                     <ul>
                         <li><a href="#home">मुख्य</a></li>
-                        <li><a href="#about">इतिहास</a></li>
+                        <li><a href="#saints">हमारे संतों का जीवन दर्शन</a></li>
                         <li><a href="#events">कार्यक्रम</a></li>
                         <li><a href="#gallery">गैलरी</a></li>
                         <li><a href="#contact">संपर्क</a></li>
@@ -348,6 +388,32 @@
                 <p>मंदिर में भगवान कृष्ण और राधा रानी की अत्यंत सुंदर प्रतिमाएं हैं जो भक्तों को आनंद और शांति प्रदान करती हैं।</p>
             </section>
 
+            <section id="saints" class="section">
+                <h2>संतों की प्रेरणादायक कथाएँ</h2>
+            
+                <div class="saints-grid">
+                  <div class="saint-card">
+                    <img src="images/baba-ramdas.jpg" alt="बाबा रामदास साहिब जी" />
+                    <h3>बाबा रामदास साहिब जी</h3>
+                    <p>
+                      बाबा रामदास साहिब जी ने अपना सम्पूर्ण जीवन सेवा, भक्ति और सच्चाई के मार्ग पर अर्पित किया। 
+                      उन्होंने निःस्वार्थ सेवा के माध्यम से हज़ारों लोगों को आध्यात्मिक मार्ग दिखाया।
+                    </p>
+                  </div>
+            
+                  <div class="saint-card">
+                    <img src="images/sant-name.jpg" alt="संत का नाम" />
+                    <h3>संत [नाम]</h3>
+                    <p>
+                      जय बाबा जी की वाणी, विनम्रता और साधना से जनमानस को जागरण मिला। 
+                      उनका जीवन संतुलन, ध्यान और प्रेम का आदर्श उदाहरण है।
+                    </p>
+                  </div>
+            
+                  <!-- Add more saint cards as needed -->
+                </div>
+            </section>
+            
             <section id="gallery" class="section">
                 <h2>📸 फोटो गैलरी</h2>
                 <div class="photo-gallery">
