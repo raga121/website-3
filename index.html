@@ -207,6 +207,67 @@
           line-height: 1.5;
         }
 
+        .locations-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 2rem;
+          margin-top: 2rem;
+        }
+        
+        .location-card {
+          background: linear-gradient(135deg, #a8e6cf, #88d8a3);
+          padding: 1.5rem;
+          border-radius: 12px;
+          text-align: center;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease;
+        }
+        
+        .location-card:hover {
+          transform: translateY(-5px);
+        }
+        
+        .location-card img {
+          width: 100%;
+          max-height: 200px;
+          object-fit: cover;
+          border-radius: 10px;
+          margin-bottom: 1rem;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .location-card h3 {
+          color: #2d3436;
+          font-size: 1.3rem;
+          margin-bottom: 0.5rem;
+        }
+        
+        .location-card p {
+          font-size: 1rem;
+          line-height: 1.5;
+        }
+
+        .contact-box {
+          margin-top: 1rem;
+          padding: 0.8rem 1rem;
+          background: rgba(255, 255, 255, 0.35);
+          border-radius: 8px;
+          font-size: 0.95rem;
+          line-height: 1.6;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+          text-align: left;
+        }
+        
+        .contact-box a {
+          color: #2d3436;
+          font-weight: bold;
+          text-decoration: none;
+        }
+        
+        .contact-box a:hover {
+          text-decoration: underline;
+        }
+
         /* Photo Gallery */
         .photo-gallery {
             display: grid;
@@ -354,7 +415,7 @@
                         <li><a href="#saints">हमारे संतों का जीवन दर्शन</a></li>
                         <li><a href="#events">कार्यक्रम</a></li>
                         <li><a href="#gallery">गैलरी</a></li>
-                        <li><a href="#contact">संपर्क</a></li>
+                        <li><a href="#locations">हमारे आश्रम स्थल</a></li>
                         <li><a href="#charity">सेवा</a></li>
                     </ul>
                 </nav>
@@ -403,7 +464,7 @@
             
                   <div class="saint-card">
                     <img src="images/sant-name.jpg" alt="संत का नाम" />
-                    <h3>संत [नाम]</h3>
+                    <h3>जय बाबा साहिब जी</h3>
                     <p>
                       जय बाबा जी की वाणी, विनम्रता और साधना से जनमानस को जागरण मिला। 
                       उनका जीवन संतुलन, ध्यान और प्रेम का आदर्श उदाहरण है।
@@ -412,6 +473,59 @@
             
                   <!-- Add more saint cards as needed -->
                 </div>
+            </section>
+
+            <section id="locations" class="section">
+              <div class="container">
+                <h2>हमारे आश्रम स्थल</h2>
+            
+                <div class="locations-grid">
+            
+                  <div class="location-card">
+                    <img src="images/nijdham-ashram.jpg" alt="निजधाम आश्रम" />
+                    <h3>निजधाम आश्रम, ग्वालियर</h3>
+                    <p>
+                      मुख्य आश्रम, जहाँ श्री बाबा रामदास साहिब जी ने वर्षों तक साधना की। 
+                      यहाँ नियमित रूप से सत्संग, भजन और धार्मिक आयोजन होते हैं।
+                    </p>
+                    <div class="contact-box">
+                        <strong>सेवाधारी:</strong> श्री दीपक जी<br>
+                        <strong>संपर्क:</strong> <a href="tel:+91999999999">+91 999999999</a><br>
+                        <strong>पता:</strong> लश्कर, ग्वालियर<br>
+                      </div>
+                  </div>
+            
+                  <div class="location-card">
+                    <img src="images/delhi-ashram.jpg" alt="दिल्ली आश्रम" />
+                    <h3>निजधाम आश्रम, हरिद्वार</h3>
+                    <p>
+                      यह आश्रम हरिद्वार में स्थित है और भक्तों के लिए भक्ति, ध्यान और सेवा के कार्यों का केंद्र है। 
+                      यहाँ प्रत्येक सप्ताह सत्संग और भंडारे आयोजित होते हैं।
+                    </p>
+                    <div class="contact-box">
+                        <strong>सेवाधारी:</strong> श्री दीपक जी<br>
+                        <strong>संपर्क:</strong> <a href="tel:+91999999999">+91 999999999</a><br>
+                        <strong>पता:</strong> लश्कर, ग्वालियर<br>
+                      </div>
+                  </div>
+            
+                  <div class="location-card">
+                    <img src="images/varanasi-ashram.jpg" alt="वाराणसी आश्रम" />
+                    <h3>निजधाम आश्रम, उल्हासनगर</h3>
+                    <p>
+                      मुख्य आश्रम, जहाँ श्री बाबा रामदास साहिब जी ने वर्षों तक साधना की। 
+                      यहाँ नियमित रूप से सत्संग, भजन और धार्मिक आयोजन होते हैं।
+                    </p>
+
+                    <div class="contact-box">
+                        <strong>सेवाधारी:</strong> श्री दीपक जी<br>
+                        <strong>संपर्क:</strong> <a href="tel:+91999999999">+91 999999999</a><br>
+                        <strong>पता:</strong> लश्कर, ग्वालियर<br>
+                      </div>
+                  </div>
+            
+                </div>
+              </div>
             </section>
             
             <section id="gallery" class="section">
