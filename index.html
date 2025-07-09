@@ -459,29 +459,38 @@
         .side-doha {
           position: fixed;
           top: 150px;
-          width: 200px;
-          background-color: rgba(255, 248, 220, 0.8);
-          color: #4e342e;
-          font-size: 0.9rem;
+          width: 180px;
+          color: #fff;
+          font-size: 1.1rem;
+          font-family: 'Georgia', 'Devanagari Sangam MN', serif;
           font-style: italic;
           padding: 1rem;
-          border-radius: 10px;
-          box-shadow: 0 2px 6px rgba(0,0,0,0.1);
           z-index: 1000;
           line-height: 1.6;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+          animation: fadeIn 1.5s ease forwards;
         }
         
         .left-doha {
           left: 10px;
+          text-align: left;
         }
         
         .right-doha {
           right: 10px;
+          text-align: right;
         }
         
+        /* Optional smooth fade-in */
+        @keyframes fadeIn {
+          0% { opacity: 0; transform: translateY(20px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Hide on small screens */
         @media (max-width: 992px) {
           .side-doha {
-            display: none; /* Hide on smaller screens */
+            display: none;
           }
         }
     </style>
