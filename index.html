@@ -456,37 +456,32 @@
             }
         }
 
-        .dohas-left, .dohas-right {
+        .side-doha {
           position: fixed;
-          top: 100px;
-          bottom: 100px;
-          width: 120px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          gap: 1rem;
+          top: 150px;
+          width: 200px;
+          background-color: rgba(255, 248, 220, 0.8);
+          color: #4e342e;
           font-size: 0.9rem;
           font-style: italic;
-          color: #5d4037;
-          background: rgba(255, 248, 220, 0.8);
-          padding: 10px;
-          z-index: 10;
+          padding: 1rem;
           border-radius: 10px;
-          writing-mode: vertical-rl;
-          text-orientation: mixed;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+          z-index: 1000;
+          line-height: 1.6;
         }
         
-        .dohas-left {
+        .left-doha {
           left: 10px;
         }
         
-        .dohas-right {
+        .right-doha {
           right: 10px;
         }
         
-        @media (max-width: 768px) {
-          .dohas-left, .dohas-right {
-            display: none; /* Hide on small screens */
+        @media (max-width: 992px) {
+          .side-doha {
+            display: none; /* Hide on smaller screens */
           }
         }
     </style>
@@ -939,14 +934,14 @@
         });
     </script>
 </body>
-<div class="dohas-left">
-    <div class="doha-text">"सतगुरु की महिमा अपरम्पार"</div>
-    <div class="doha-text">"राम नाम की महिमा बखानूँ"</div>
+<div class="side-doha left-doha">
+  <p>"संतों की वाणी अमृत तुल्य है।"</p>
+  <p>"राम नाम सदा सुखदाई।"</p>
 </div>
 
-<div class="dohas-right">
-    <div class="doha-text">"जपो राम नाम सदा सुखदाई"</div>
-    <div class="doha-text">"भक्ति से भवसागर तर जाई"</div>
+<div class="side-doha right-doha">
+  <p>"सतगुरु की महिमा अपरंपार।"</p>
+  <p>"भक्ति मार्ग ही मोक्ष का मार्ग है।"</p>
 </div>
     
 </html>
